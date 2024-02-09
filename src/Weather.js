@@ -10,7 +10,7 @@ export default function Weather(props) {
   }
   let apiKey = "5f472b7acba333cd8a035ea85a0d4d4c";
   let units = "metric";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${props.city}&appid=${apiKey}&units=${units}`;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${props.city}&appid=${apiKey}&units=${units}` ;
 
   axios.get(apiUrl).then(handleResponse);
   return (
@@ -18,7 +18,7 @@ export default function Weather(props) {
       height="80"
       width="80"
       radius="9"
-      color="green"
+      color="blue"
       ariaLabel="loading"
       wrapperStyle
       wrapperClass
